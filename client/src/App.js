@@ -1,9 +1,9 @@
-import './style.css';
+import PostsList from "./PostsList";
 
 function App() {
   return (
     <div className="App">
-      <h1>React App</h1>
+      <PostsList />
     </div>
   );
 }
