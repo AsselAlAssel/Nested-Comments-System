@@ -168,6 +168,7 @@ button {
     padding: .5rem;
     border: 1px solid hsl(235, 100%, 90%);
     border-radius: .5rem;
+    margin-bottom: 5px;
 }
 
 .comment .header {
@@ -200,4 +201,37 @@ button {
 
 .btn[disabled] {
     --color: hsl(var(--hue), 20%, 74%);
+}
+
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loginForm {
+    width: 400px;
+    padding: 2rem;
+    border: 1px solid hsl(235, 100%, 90%);
+    border-radius: .5rem;
+}
+
+.loginForm input {
+    width: 100%;
+    padding: .5rem;
+    border: 1px solid hsl(235, 100%, 90%);
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+}
+
+.loginForm--submitBtn {
+    width: 100%;
+    padding: .5rem;
+    border: none;
+    border-radius: .5rem;
+    background: hsl(235, 100%, 67%);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
 }
