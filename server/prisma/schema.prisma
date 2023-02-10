@@ -20,6 +20,7 @@ model Post {
 model User {
   id       String    @id @default(uuid())
   name     String
+  password String
   Comments Comment[]
   Likes    Like[]
 }

@@ -4,8 +4,8 @@ const prisma = new PrismaClient()
 async function seed() {
     await prisma.post.deleteMany()
     await prisma.user.deleteMany()
-    const kyle = await prisma.user.create({ data: { name: "Kyle" } })
-    const sally = await prisma.user.create({ data: { name: "Sally" } })
+    const kyle = await prisma.user.create({ data: { name: "Kyle", password: "12345aa" } })
+    const sally = await prisma.user.create({ data: { name: "Sally", password: "123ss" } })
 
     const post1 = await prisma.post.create({
         data: {
