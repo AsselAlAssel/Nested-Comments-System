@@ -10,11 +10,10 @@ const PostsList = () => {
     if (isError)
         return <h1>{error.message}</h1>
     return (
-        <div>{
+        <div className='postsContainer'>{
             data?.map((post) => {
-                return <h1 key={post.id}>
-                    <NavLink to={`/post/${post.id}`}>{post.title}</NavLink>
-                </h1>
+                return <NavLink to={`/post/${post.id}`} className="post">{post.title}</NavLink>
+
             })
         }</div>
     )
